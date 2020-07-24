@@ -1,0 +1,47 @@
+.dnd_group,
+.dnd_item {
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+.dnd_canvas {
+  padding: 0.5rem;
+  font-family: sans-serif;
+  font-weight: 700;
+  background: #282c34;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.dnd_group {
+  background: #7f92b8;
+  font-family: sans-serif;
+}
+
+.dnd_group-title {
+  margin-bottom: 0.5rem;
+  color: white;
+  font-size: 1.4em;
+}
+
+.dnd_item {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  font-size: 1.2em;
+  font-family: sans-serif;
+}
+
+.dnd_item.current {
+  background: #282c34;
+}
+
+.dnd_item:not(:last-of-type) {
+  margin-bottom: 0.5rem;
+}
